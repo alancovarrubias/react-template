@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "parcel build src/index.html",
+    "start": "serve --no-clipboard --single --listen 8080 dist",
     "dev": "parcel src/index.html",
     "format": "prettier \"src/**/*.{js,html}\" --write",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
@@ -13,6 +15,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/react": "^16.9.48",
+    "@types/react-dom": "^16.9.8",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.7.0",
     "eslint-config-prettier": "^6.11.0",
@@ -20,7 +24,9 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.6",
     "parcel-bundler": "^1.12.4",
-    "prettier": "^2.1.1"
+    "prettier": "^2.1.1",
+    "serve": "^11.3.2",
+    "typescript": "^4.0.2"
   },
   "dependencies": {
     "react": "^16.13.1",
